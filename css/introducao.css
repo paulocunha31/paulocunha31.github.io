@@ -1,0 +1,155 @@
+.introducao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 150px;
+}
+
+
+.container-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 310px;
+    max-width: 100%;
+
+}
+
+.contato {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 20px;
+
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Roboto, Sans-serif;
+}
+
+.contato-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contato-item span {
+    color: #595959;
+}
+
+.contato-item a {
+    color: #595959;
+    word-break: break-word;
+
+}
+
+.titulo {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.titulo::before {
+    content: "";
+    width: 130px;
+    height: 130px;
+    background: url("../img/detalhe.svg") no-repeat center;
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -35px;
+
+}
+
+.introducao p {
+    color: #2E2E2E;
+    font-size: 1.5rem;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .introducao {
+        gap: 60px;
+
+    }
+
+    .titulo {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    .titulo::before {
+        width: 30px;
+        height: 10px;
+        left: 0;
+        top: -15px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+
+    .introducao {
+        grid-template-columns: 1fr;
+       
+
+    }
+
+    .container-contato {
+        order: 1;
+
+    }
+
+    .titulo {
+        margin-bottom: 20px;
+    }
+
+    .titulo br {
+        display: none;
+
+    }
+
+
+    .titulo::before {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container-contato {
+        width: 100%;
+
+    }
+
+
+
+
+}
